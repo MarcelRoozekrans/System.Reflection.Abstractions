@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net40;netstandard2.0;</TargetFrameworks>
+    <Version>1.0.1</Version>
+    <Authors>Marcel Roozekrans</Authors>
+    <Company></Company>
+    <Description>Interfaced wrappers around System Reflection.</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageProjectUrl>https://github.com/MarcelRoozekrans/System.Reflection.Abstractions</PackageProjectUrl>    
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <PackageTags>Reflection Abstraction</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+  </ItemGroup>  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.4'">
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net40' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
